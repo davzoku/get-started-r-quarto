@@ -1,0 +1,33 @@
+---
+title: "02 Intro to Tidyverse"
+author: "Walter Teng"
+format: 
+  html: 
+    theme: minty
+date: "`r Sys.Date()`"
+toc: true
+---
+
+```{r}
+pacman::p_load(tidyverse)
+```
+
+## Understanding R's read.csv vs Tidy's read_csv
+
+There are several advantages of `read_csv` as compared to `read.csv`.
+
+```{r}
+data_dot <-read.csv("data/simple_data.csv")
+data_dot
+```
+
+
+```{r}
+data <-read_csv("data/simple_data.csv")
+data
+```
+
+*Notes*:
+
+1. In R, array indexes start at 1.
+2. Notice how `read.csv` replaces spaces with dots, while in `read_csv`, you can refer to columns with spaced headers as is.

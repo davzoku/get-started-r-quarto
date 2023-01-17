@@ -1,2 +1,3 @@
-# get-started-r-quarto
-Getting Started with R and Quarto
+# Getting Started with R and Quarto
+
+Notes on R and Quarto.

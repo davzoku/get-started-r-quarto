@@ -1,0 +1,67 @@
+---
+title: "01 Getting Started with R and Quarto"
+---
+
+## Introductionx
+
+### R
+
+R is 'GNU S', a freely available language and environment for statistical computing and graphics which provides a wide variety of statistical and graphical techniques: linear and nonlinear modelling, statistical tests, time series analysis, classification, clustering, etc.
+
+### Quarto
+
+[Quarto](https://quarto.org/) is a new open-source scientific and technical publish system designed and developed by posit formally known as RStudio.
+
+#### Key Advantages
+
+1.  Support multiple languages such as Python, R, Julia and Observable
+2.  Produce high-quality articles, reports, presentations, websites, blogs, and books in multiple format such as HTML, PDF, MS Word, ePub. It is easy to present your findings for different audience, different presentation format using the same base code.
+
+### CRAN
+
+CRAN is a network of ftp and web servers around the world that store identical, up-to-date, versions of code and documentation for R.
+
+## Project Basics
+
+### Quarto
+
+[Quarto documentation](https://quarto.org/docs/projects/quarto-projects.html)
+
+#### Metadata
+
+Quarto uses YAML to manage the metadata of the documents and it is also possible for [shared metadatas](https://quarto.org/docs/projects/quarto-projects.html#shared-metadata) from multiple levels.
+
+#### Execution Options
+
+[Quarto - Execution Options](https://quarto.org/docs/computations/execution-options.html)
+
+For example, we can use the following to hide code blocks in the output document.
+
+    execute:
+      echo: false
+
+### Other Packages
+
+More details on these packages will be covered in subsequent sessions.
+
+-   [pacman](https://cran.r-project.org/web/packages/pacman/index.html) : package management tool
+-   [Tidyverse](https://www.tidyverse.org/packages): an opinionated collection of R packages for data science including:
+    -   ggplot2: for visualization
+    -   dplyr: for data manipulation
+    -   tidyr: for tidy data
+    -   readr: read rectangular data like csv, tsv
+    -   tibble: data frames
+    -   stringr: for working with strings
+    -   forcats: for working with factors
+
+*Note: R packages tend to be more loosely coupled and has very specialised usage; as compared to python pandas, for example.*
+
+## Notes on Rmarkdown (rmd) vs Quarto (qmd)
+
+-   [With Quarto Coming, is R Markdown Going Away? No. - Yihui Xie \| 谢益辉](https://yihui.org/en/2022/04/quarto-r-markdown/)
+-   [Notes on Changing from Rmarkdown/Bookdown to Quarto \| Credibly Curious](https://www.njtierney.com/post/2022/04/11/rmd-to-qmd/)
+
+## Resources
+
+-   [R for Data Science Book](https://r4ds.had.co.nz/)
+-   [rstudio/cheatsheets: RStudio Cheat Sheets](https://github.com/rstudio/cheatsheets)

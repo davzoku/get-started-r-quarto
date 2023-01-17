@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>01 Getting Started with R and Quarto</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="01-getting-started_files/libs/clipboard/clipboard.min.js"></script>
+<script src="01-getting-started_files/libs/quarto-html/quarto.js"></script>
+<script src="01-getting-started_files/libs/quarto-html/popper.min.js"></script>
+<script src="01-getting-started_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="01-getting-started_files/libs/quarto-html/anchor.min.js"></script>
+<link href="01-getting-started_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="01-getting-started_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="01-getting-started_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="01-getting-started_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="01-getting-started_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">01 Getting Started with R and Quarto</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="introductionx" class="level2">
+<h2 class="anchored" data-anchor-id="introductionx">Introductionx</h2>
+<section id="r" class="level3">
+<h3 class="anchored" data-anchor-id="r">R</h3>
+<p>R is ‘GNU S’, a freely available language and environment for statistical computing and graphics which provides a wide variety of statistical and graphical techniques: linear and nonlinear modelling, statistical tests, time series analysis, classification, clustering, etc.</p>
+</section>
+<section id="quarto" class="level3">
+<h3 class="anchored" data-anchor-id="quarto">Quarto</h3>
+<p><a href="https://quarto.org/">Quarto</a> is a new open-source scientific and technical publish system designed and developed by posit formally known as RStudio.</p>
+<section id="key-advantages" class="level4">
+<h4 class="anchored" data-anchor-id="key-advantages">Key Advantages</h4>
+<ol type="1">
+<li>Support multiple languages such as Python, R, Julia and Observable</li>
+<li>Produce high-quality articles, reports, presentations, websites, blogs, and books in multiple format such as HTML, PDF, MS Word, ePub. It is easy to present your findings for different audience, different presentation format using the same base code.</li>
+</ol>
+</section>
+</section>
+<section id="cran" class="level3">
+<h3 class="anchored" data-anchor-id="cran">CRAN</h3>
+<p>CRAN is a network of ftp and web servers around the world that store identical, up-to-date, versions of code and documentation for R.</p>
+</section>
+</section>
+<section id="project-basics" class="level2">
+<h2 class="anchored" data-anchor-id="project-basics">Project Basics</h2>
+<section id="quarto-1" class="level3">
+<h3 class="anchored" data-anchor-id="quarto-1">Quarto</h3>
+<p><a href="https://quarto.org/docs/projects/quarto-projects.html">Quarto documentation</a></p>
+<section id="metadata" class="level4">
+<h4 class="anchored" data-anchor-id="metadata">Metadata</h4>
+<p>Quarto uses YAML to manage the metadata of the documents and it is also possible for <a href="https://quarto.org/docs/projects/quarto-projects.html#shared-metadata">shared metadatas</a> from multiple levels.</p>
+</section>
+<section id="execution-options" class="level4">
+<h4 class="anchored" data-anchor-id="execution-options">Execution Options</h4>
+<p><a href="https://quarto.org/docs/computations/execution-options.html">Quarto - Execution Options</a></p>
+<p>For example, we can use the following to hide code blocks in the output document.</p>
+<pre><code>execute:
+  echo: false</code></pre>
+</section>
+</section>
+<section id="other-packages" class="level3">
+<h3 class="anchored" data-anchor-id="other-packages">Other Packages</h3>
+<p>More details on these packages will be covered in subsequent sessions.</p>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/pacman/index.html">pacman</a> : package management tool</li>
+<li><a href="https://www.tidyverse.org/packages">Tidyverse</a>: an opinionated collection of R packages for data science including:
+<ul>
+<li>ggplot2: for visualization</li>
+<li>dplyr: for data manipulation</li>
+<li>tidyr: for tidy data</li>
+<li>readr: read rectangular data like csv, tsv</li>
+<li>tibble: data frames</li>
+<li>stringr: for working with strings</li>
+<li>forcats: for working with factors</li>
+</ul></li>
+</ul>
+<p><em>Note: R packages tend to be more loosely coupled and has very specialised usage; as compared to python pandas, for example.</em></p>
+</section>
+</section>
+<section id="notes-on-rmarkdown-rmd-vs-quarto-qmd" class="level2">
+<h2 class="anchored" data-anchor-id="notes-on-rmarkdown-rmd-vs-quarto-qmd">Notes on Rmarkdown (rmd) vs Quarto (qmd)</h2>
+<ul>
+<li><a href="https://yihui.org/en/2022/04/quarto-r-markdown/">With Quarto Coming, is R Markdown Going Away? No.&nbsp;- Yihui Xie | 谢益辉</a></li>
+<li><a href="https://www.njtierney.com/post/2022/04/11/rmd-to-qmd/">Notes on Changing from Rmarkdown/Bookdown to Quarto | Credibly Curious</a></li>
+</ul>
+</section>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
+<ul>
+<li><a href="https://r4ds.had.co.nz/">R for Data Science Book</a></li>
+<li><a href="https://github.com/rstudio/cheatsheets">rstudio/cheatsheets: RStudio Cheat Sheets</a></li>
+</ul>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
