@@ -1,8 +1,15 @@
 ---
 title: "01 Getting Started with R and Quarto"
+author: "Walter Teng"
+format: 
+  pdf: default
+  html: 
+    theme: minty
+date: "`r Sys.Date()`"
+toc: true
 ---
 
-## Introductionx
+## Introduction
 
 ### R
 
